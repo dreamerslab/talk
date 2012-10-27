@@ -1,0 +1,12 @@
+<? it.styles.push( 'embedded' ); ?>
+<? it.styles.push( 'app' ); ?>
+
+<div id="iframe-wrap">
+  <iframe src="<?= it.channel.protocol + '://' + it.channel.url ?>">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+<script src="<?= it.host ?>socket.io/socket.io.js"></script>
+<script src='/script?id=<?= it.channel._id ?>'></script>

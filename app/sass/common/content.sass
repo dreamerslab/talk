@@ -1,0 +1,70 @@
+@import "./lib"
+
+#content
+  width: 800px
+  margin: 0 auto
+  
+  table
+    width: 100%
+    
+    a
+      font-weight: bolder
+      &:hover
+        text-decoration: underline
+  th
+    font-size: 14px
+    font-weight: bolder
+    color: #333
+    padding: 5px 5px 10px
+  
+  td
+    padding: 10px 5px
+
+    &.first
+      padding: 20px 0 0
+      
+    &.channel-user-count
+      padding: 8px 0
+      
+      span
+        color: white
+        background: #333
+        padding: 5px 10px
+        line-height: 20px
+        @include box-round( 6px )
+        
+#nav
+  font-weight: bolder
+  padding: 30px 0 20px
+  
+  a
+    padding: 9px 15px 11px
+    display: block
+    font-size: 18px
+    letter-spacing: 1px
+    
+  li
+    @include float-l
+    &.selected
+      a
+        color: white
+        background: #333
+        @include box-round( 5px )
+        
+    
+.channel-name
+  text-align: left
+  
+.channel-user-count, .related-channels
+  text-align: center
+
+.spliter
+  border-top: 1px solid #ccc
+  height: 0 !important
+  padding: 0 !important
+
+.spacer-t
+  margin: 0 0 10px
+  
+.spacer-b
+  margin: 10px 0 0

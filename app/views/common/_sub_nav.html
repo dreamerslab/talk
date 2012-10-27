@@ -1,0 +1,15 @@
+<div id="nav">
+  <ul class="clearfix">
+    <li class="<?= it.sub_nav.latest.klass ?>">
+      <h3><a href="<?= it.sub_nav.latest.url ?>">Latest</a></h3>
+    </li>
+    <li class="<?= it.sub_nav.hottest.klass ?>">
+      <h3><a href="<?= it.sub_nav.hottest.url ?>">Hottest</a></h3>
+    </li>
+    <? if( it.sub_nav.related ){ ?>
+    <li class="<?= it.sub_nav.related.klass ?>">
+      <h3><a href="<?= it.sub_nav.related.url ?>">Related</a></h3>
+    </li>
+    <? } ?>
+  </ul>
+</div>

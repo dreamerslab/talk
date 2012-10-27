@@ -1,0 +1,187 @@
+@import "common/lib"
+@import "compass/utilities/general/clearfix"
+
+$font-base: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
+
+#talk-plus-wrap
+  font-size: 12px
+  font-family: $font-base
+  line-height: 1em
+  position: fixed
+  z-index: 1000
+  width: 360px
+  bottom: 0
+  right: 30px
+  color: #222
+  overflow: hidden
+  @include box-round-each( 5px, 5px, 0, 0 )
+  @include box-shadow( 3px, 3px, 5px, 5px )
+  
+  span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video 
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+    text-align: left
+
+  ol, ul 
+    list-style: none
+
+  table 
+    border-collapse: collapse
+    border-spacing: 0
+
+  caption, th, td 
+    text-align: left
+    font-weight: normal
+    vertical-align: middle
+
+  q, blockquote 
+    quotes: none
+
+  q:before, q:after, blockquote:before, blockquote:after 
+    content: ""
+    content: none
+
+  a img 
+    border: none
+
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary 
+    display: block
+    
+  h1, h2, h3, h4, h5, h6
+    font-size: 12px
+  
+  a
+    color: #222
+  
+#talk-plus-header
+  text-shadow: 0 1px 0 white
+  padding: 4px 4px 3px
+  height: 22px
+  line-height: 18px
+  border-bottom: 1px solid #666
+  position: relative
+  @include box-round-each( 5px, 5px, 0, 0 )
+  @include box-gradient( #eee, #888 )
+  
+  h3
+    @include float-l
+
+#talk-plus-hide
+  display: block
+  position: absolute
+  top: 0
+  right: 5px
+  font-weight: bolder
+  width: 20px
+  height: 20px
+  
+  span
+    font-size: 20px !important
+    display: block
+    position: absolute
+    top: -15px
+    right: 3px
+    
+#talk-plus-channel-title
+  height: 20px
+  margin: 0 0 0 5px !important
+  position: absolute
+  top: 5px
+  left: 65px
+  right: 0
+
+#talk-plus-logo
+  background: #333
+  font-weight: bolder
+  height: 20px
+  padding: 0 5px !important
+  text-shadow: none
+  @include box-round
+  a
+    color: white
+
+#talk-plus-join-input, #talk-plus-send-input
+  background: #eee
+  border: 1px solid #777
+  padding: 3px 5px
+  font-size: 12px
+  @include box-round
+
+#talk-plus-join-input
+  width: 240px
+
+#talk-plus-send-input
+  width: 275px
+
+#talk-plus-join-btn, #talk-plus-send-btn
+  background: #eee
+  border: 1px solid #777
+  padding: 2px 5px
+  margin: 0 0 0 5px
+  font-size: 12px
+  @include box-round
+
+#talk-plus-content
+  width: 100%
+  background: white
+  
+#talk-plus-msgs
+  height: 200px
+  overflow: auto
+  
+  li
+    padding: 3px 3px 6px
+    @include clearfix
+    
+  span
+    &.talk-plus-msg-header
+      display: block
+      height: 15px
+    &.talk-plus-msg-user
+      padding: 0 5px 0 0
+      font-weight: bolder
+      @include float-l
+    &.talk-plus-msg-time
+      color: #aaa
+      @include float-r
+    &.talk-plus-msg-msg
+      width: 300px
+      white-space: normal
+      word-break: break-all
+      @include float-l
+      
+.talk-plus-msg-self
+  color: #336699
+  
+#talk-plus-footer
+  border-top: 1px solid #777
+  text-shadow: 0 1px 0 white
+  height: 52px
+  @include box-gradient( #eee, #888 )
+
+#talk-plus-form-wrap
+  padding: 4px 0 0 5px
+  
+#talk-plus-hot-topic
+  height: 16px
+  padding: 5px 0 0
+  
+  h3
+    padding: 0 5px 0 0
+    @include float-l

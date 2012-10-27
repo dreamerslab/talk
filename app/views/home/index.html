@@ -1,0 +1,36 @@
+<? it.scripts.push( 'libs/jquery.validate.min' ); ?>
+<? it.scripts.push( 'validate' ); ?>
+<?= it.partial( 'common/_sub_nav' ) ?>
+
+<div class="spliter spacer-t"></div>
+<table>
+  <thead>
+    <tr>
+      <th class="channel-name" nowrap="nowrap">Channel</th>
+      <th class="channel-user-count" nowrap="nowrap">Users</th>
+      <th class="related-channels" nowrap="nowrap">Related</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?
+      var i = 0;
+      var j = it.channels.length;
+      for( ; i < j; i++ ){
+    ?>
+    <tr>
+      <td class="channel-name" nowrap="nowrap">
+        <a href="/channel?url=<?= it.channels[ i ].url ?>" title="<?= it.channels[ i ].name ?>">
+          <?= it.truncate( it.channels[ i ].name, 100 ) ?>
+        </a>
+      </td>
+      <td class="channel-user-count" nowrap="nowrap">
+        <span><?= it.channels[ i ].user_count ?></span>
+      </td>
+      <td class="related-channels" nowrap="nowrap">
+        <a href="/channel/related?root=<?= it.channels[ i ].root ?>">Go</a>
+      </td>
+    </tr>
+    <? } ?>
+  </tbody>
+</table>
+<div class="spliter spacer-b"></div>
