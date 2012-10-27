@@ -7,7 +7,7 @@ A 2 day project from 2011 Startup Weekend Taipei Talkpl.us team. Talkpl.us is an
 ## Requires
 
   - node 0.8.x
-  - mongodb 2.0.x
+  - mongodb 2.x
   - packages
      - see packages.json
 

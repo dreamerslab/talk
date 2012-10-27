@@ -8,12 +8,12 @@
 
 <!---->
 
-    $ cd /path/to/the/app/talkpl.us
+    $ cd /path/to/the/app/talk
     $ node boot.js
 
 
 
 ## UBUNTU
 
-    $ cd /path/to/the/app/talkpl.us
+    $ cd /path/to/the/app/talk
     $ node boot.js
